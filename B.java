@@ -1,7 +1,6 @@
 import javax.naming.Context;
 import javax.naming.NamingEnumeration;
 import javax.naming.directory.*;
-import javax.naming.ldap.LdapContext;
 import java.util.Hashtable;
 
 public class B {
