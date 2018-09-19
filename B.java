@@ -64,5 +64,31 @@ public class B {
             }
 
         }
+        
+           /**public static boolean getAuthenticated(String name, String pass){
+        try {
+
+            String username = name;
+            String password = pass;
+            Hashtable env = new Hashtable();
+            env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
+            env.put(Context.PROVIDER_URL, "ldap://zflexldap.com ");
+            env.put(Context.SECURITY_AUTHENTICATION, "simple");
+            env.put(Context.SECURITY_PRINCIPAL, "uid="+username+",ou=users,ou=guests,dc=zflexsoftware,dc=com ");
+            env.put(Context.SECURITY_CREDENTIALS, password);
+
+
+            DirContext dirContext = new InitialDirContext(env);
+
+        }catch (Exception e){
+            System.out.println(e);
+            return false;
+        }
+
+
+        return true;
+
+    }**/
+        
 
 }
