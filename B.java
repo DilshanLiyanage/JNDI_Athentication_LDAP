@@ -8,12 +8,12 @@ public class B {
         static DirContext dirContext;
     public static boolean getAuthenticated(String name, String pass){
             try {
-                String domain = "virtusa.com";
+                String domain = "{domain-name}"; //domain name of the ad server
                 String username = name+"@"+domain;
                 String password = pass;
                 Hashtable env = new Hashtable();
                 env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
-                env.put(Context.PROVIDER_URL, "ldap://cmvdc01.virtusa.com:3268");
+                env.put(Context.PROVIDER_URL, "ldap://{ad-server-name}"); //ad server url
                 env.put(Context.SECURITY_AUTHENTICATION, "simple");
                 env.put(Context.SECURITY_PRINCIPAL, username);
                 env.put(Context.SECURITY_CREDENTIALS, password);
