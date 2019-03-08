@@ -7,11 +7,11 @@ public class A {
     public static void main(String[] args) {
 
 
-            boolean bb = B.getAuthenticated("tdilshan","virtusa password");
+            boolean bb = B.getAuthenticated("username","password");
             System.out.println("End "+bb);
             System.out.println("--------------------------------------------------------");
             DirContext dc = B.dirContext;
-            B.getAttributesInfo("kuathukorala", dc ,null);
+            B.getAttributesInfo("searching username", dc ,null);
 
 
 
